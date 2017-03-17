@@ -242,7 +242,7 @@ for filename in hdf5_file_name:
                             if thisDigi2[ch][bin]<maxq2:
                                 maxq2 = thisDigi2[ch][bin]
                                 maxT2 = bin
-                    for bin in range(maxT,1050,1):
+                    for bin in range(maxT2,1050,1):
                         if thisDigi2[ch][bin] > digi2_threshold[ch]:
                             endT2 = bin
                             break
