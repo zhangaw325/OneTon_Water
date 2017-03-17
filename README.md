@@ -10,3 +10,11 @@ This is the python script to read (one or more) h5 files collected from the wate
 -> Three different trigger types will be determined for each event.
 
 -> Waveform from digitizers are dealt event by event, baseline and threshold is determined event by event.
+
+2. Read_Tree_make_plots_v1.C
+
+This script reads (one or more) ROOT trees and save the histograms in a ROOT file.
+
+-> Inputs are (by editing the file) just filename and path in the beginning a few lines.
+
+-> In the output ROOT file, histograms for QDC, digitizers are stored for every channel. Other modules (TDC, Scaler) are not included yet, but it is very straight forward.
