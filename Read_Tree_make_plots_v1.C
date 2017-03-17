@@ -130,7 +130,7 @@ void Read_Tree_make_plots_v1(){
         bDigitizerRiseTime->SetAddress(&evtDigiRT);
         bDigitizerPulseWidth->SetAddress(&evtDigiPW);
         bDigitizerPedMean->SetAddress(&evtDigiPM);
-        bDigitizerPedWidth->SetAddress(&evtDigiPM);
+        bDigitizerPedWidth->SetAddress(&evtDigiPS);
         bTrigType->SetAddress(&evtTrigType);
 
         int nentries = (int)tree->GetEntries();
@@ -168,7 +168,7 @@ void Read_Tree_make_plots_v1(){
                }
 
                if(k<6){
-                  if( (evtDigiAmplitude[k]) > (5.0*evtDigiPW[k]) ){
+                  if( (evtDigiAmplitude[k]) > (5.0*evtDigiPS[k]) ){
                     hDigiCharge[k][0]->Fill(evtDigiCharge[k]);
                     hDigiAmp[k][0]->Fill(evtDigiAmplitude[k]);
                     hDigiST[k][0]->Fill(evtDigiST[k]);
