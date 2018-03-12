@@ -1,6 +1,13 @@
 # OneTon_Water
 Scripts for analyzing data from one ton water detector
 
+#### update on 3/12/2018 ####
+"Read_MultipleFiles_WriteTree_v2_calledByLabVIEW_v7.py"
+    Reads the h5 file and save information into ROOT Tree.
+    Developed my own (simple) method to count number of pulses in digitizer waveforms.
+    The code is tested to run fine on the cluster in batch mode (processing multiple files).
+#### end ####
+
 1. Read_MultipleFiles_WriteTree_v2.py
 
 This is the python script to read (one or more) h5 files collected from the water detector and to save a ROOT tree with all signals (with a focus on the two CAEN 4CH digitizers).
